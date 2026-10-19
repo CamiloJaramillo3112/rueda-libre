@@ -1,0 +1,7 @@
+URL completa: http://127.0.0.1:5500/index.html
+ el protocolo:http
+ el host:
+ el puerto:
+ la ruta:
+ el método de la petición:
+ el código de estado:
