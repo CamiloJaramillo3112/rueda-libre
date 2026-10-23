@@ -55,3 +55,18 @@ JavaScript:
 Permite agregar interactividad.
 Ejemplo:
 alert("Bienvenido a Rueda Libre");
+
+TABLA DE RUTAS RELATIVAS
+
+Origen             Destino                 Ruta
+---------------------------------------------------------
+index.html       tarifas.html          /paginas/tarifas.html
+index.html       reservas.html         /paginas/reservas.html
+
+/paginas/tarifas.html index.html      ../index.html
+/paginas/tarifas.html   reservas.html    reservas.html
+
+/paginas/reservas.html  index.html     ../index.html 
+/paginas/reservas.html  tarifas.html    tarifas.html
+
+tarifas.html        seccion recorridos    tarifas.html#recorridos
