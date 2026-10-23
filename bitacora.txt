@@ -1,7 +1,57 @@
-URL completa: http://127.0.0.1:5500/index.html
- el protocolo:http
- el host:
- el puerto:
- la ruta:
- el método de la petición:
- el código de estado:
+
+1. Análisis de la petición principal
+ 
+URL completa:
+http://127.0.0.1:5500/index.html
+ 
+Protocolo:
+http
+ 
+Host:
+127.0.0.1
+ 
+Puerto:
+5500
+ 
+Ruta:
+/index.html
+ 
+Método:
+GET
+ 
+Código de estado:
+200 OK
+ 
+Significado:
+La solicitud fue procesada correctamente y el servidor devolvió el recurso solicitado.
+ 
+ 
+2. Análisis de una ruta inexistente
+ 
+URL:
+http://127.0.0.1:5500/promociones.html
+ 
+Código de estado:
+404 Not Found
+ 
+Significado:
+El recurso solicitado no existe en el servidor y por eso no puede ser encontrado.
+ 
+ 
+3. Tecnologías del sitio web
+ 
+HTML:
+Define la estructura y el contenido de la página.
+Ejemplo: <h1>Rueda Libre</h1>
+ 
+CSS:
+Permite aplicar estilos visuales.
+Ejemplo:
+h1 {
+color: green;
+}
+ 
+JavaScript:
+Permite agregar interactividad.
+Ejemplo:
+alert("Bienvenido a Rueda Libre");
