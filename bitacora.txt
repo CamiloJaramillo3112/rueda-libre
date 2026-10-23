@@ -70,3 +70,27 @@ index.html       reservas.html         /paginas/reservas.html
 /paginas/reservas.html  tarifas.html    tarifas.html
 
 tarifas.html        seccion recorridos    tarifas.html#recorridos
+
+MiniReto 5 - Estructura semántica
+
+Header:
+- Nombre del negocio.
+- Menú principal.
+
+Nav:
+-navegación entre Inicio, Tarifas y Reservas.
+
+Main:
+-Contenido principal de cada pagina.
+
+Section:
+-Agrupa bloques temáticos relacionados.
+
+Article:
+- Cada servicio de la página Inicio.
+
+Aside:
+- Información complementaria como recomendaciones y horarios.
+
+Footer:
+- Información institucional y contacto.
