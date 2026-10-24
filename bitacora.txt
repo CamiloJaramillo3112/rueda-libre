@@ -94,3 +94,26 @@ Aside:
 
 Footer:
 - Información institucional y contacto.
+
+
+********************************************************
+
+MINIRETO 7  - PRUEBAS DE VALIDACION
+
+Campo |   Dato de prueba       | Dato de prueba   | Esperado   | Obtenido
+------------------------------------------------------------------------------------
+Nombre    Ca                        Error              Error       
+Nombre    Camilo                    aceptar          aceptar
+Documento  abc123                    error            Error
+Documento  1234567                  aceptar           aceptar
+Correo     camilo@                  error              Error
+Correo     camilo@gmail.com          aceptar           aceptar
+Celular    1234567890              error              Error
+Celular    3001234567                aceptar          aceptar
+Fecha      2026-10-20               error             Error
+Fecha      2026-11-15                 aceptar          aceptar
+Cantidad   0                         error             error
+Cantidad    3                      aceptar              aceptar
+Politicas   sin marcar             error                error
+Politicas    marcada                 aceptar           aceptar
+
