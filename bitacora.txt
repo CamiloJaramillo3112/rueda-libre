@@ -117,3 +117,69 @@ Cantidad    3                      aceptar              aceptar
 Politicas   sin marcar             error                error
 Politicas    marcada                 aceptar           aceptar
 
+MAPA PARA BITACORA
+
+Hallazgo 1:
+Se verificó el atributo lang="es" en todas las paginas.
+
+Correccion:
+No fue necesario corregir.
+
+Hallazgo 2: 
+Se verificó los img con sus respectivos nombres.
+
+Corrección:
+No fue necesario corregir.
+
+Hallazgo 3:
+Se verifica correctamente las 3 pestañas html con sus respectivos nombres.
+
+Corrección:
+No fue necesario correccion.
+
+Hallazgo 4:
+se verifica relación entre las paginas.
+
+Correción, se corrige los hipervinculos, ya que se toma la ruta
+con la carpeta.
+
+MAPA DE USO DE COLOR
+
+Fondo general:
+Crema (#FAF6EF)
+
+Títulos y encabezados:
+Azul Noche (#14213D)
+
+Texto principal:
+Azul Noche (#14213D)
+
+Texto secundario:
+Gris Asfalto (#5B6470)
+
+Botones principales:
+Verde Ruta (#1E7A4F)
+Texto del botón: Blanco
+
+Botones secundarios:
+Naranja Pedal (#F39A2B)
+Solo para elementos destacados o texto grande.
+
+Enlaces:
+Verde Ruta (#1E7A4F)
+
+
+SITIO PUBLICADO
+
+URL:
+https://github.com/CamiloJaramillo3112/rueda-libre.git
+
+Se verificó:
+index.html
+paginas/tarifas.html
+paginas/reservas.html
+
+Sin imágenes rotas.
+Sin enlaces rotos.
+Sin errores 404.
+
