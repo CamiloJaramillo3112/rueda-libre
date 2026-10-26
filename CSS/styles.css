@@ -28,6 +28,36 @@ body {
     background-color: var(--crema);
 }
 
+#menu a:hover {
+    color: var(--verde-ruta);
+
+    #menu a:focus {
+        outline: 3px solid var(--naranja-pedal);
+        outline-offset: 3px;
+    }
+
+    boton:hover {
+        blackground-color:
+            var(--azul-noche);
+    }
+
+
+}
+
+#menu a {
+    color: var(--gris-asfalto);
+}
+
+#menu a {
+    text-decoration: none;
+    color: var(--gris-asfalto)
+}
+
+.activo {
+    color: var(--verde-ruta);
+    font-weigth: 600;
+}
+
 h1,
 h2,
 h3,
@@ -46,6 +76,18 @@ nav a {
     color: var(--verde-ruta);
 }
 
+.boton {
+    blackground-color: var(--azul-noche)--verde-ruta;
+    color: white;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
+
+.boton:focus {
+    outline: 3 px solid var(--naranja-pedal);
+    outline-offset: 3px;
+}
+
 footer {
     background-color: var(--azul-noche);
     color: white;
@@ -54,4 +96,14 @@ footer {
 
 table {
     margin-bottom: var(--espacio-grande);
+}
+
+.Formulario,
+.Formulario input:focus,
+.Formulario select:focus {
+
+
+    outline: 2px solid var(--naranja-pedal);
+    outline-offset: 2px;
+
 }

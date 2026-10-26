@@ -196,3 +196,22 @@ background-color
 
 Comprobación:
 El color de fondo aplicado a body no se hereda automáticamente a otros elementos.
+
+
+MINIRETO 10 - ESPECIFICIDAD
+
+Selector:
+#menu abc123
+Especificidad:
+ID + elementos
+Selector:
+.activo
+Especificidad:
+Clase
+
+Conflicto:
+
+#menu a aplica color gris y .activo color Verde
+Solucion:
+
+La regla .activo fue declarada despues de #menu a, por lo que  la cascada aplica el color verde sin usar !
