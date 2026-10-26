@@ -183,3 +183,16 @@ Sin imágenes rotas.
 Sin enlaces rotos.
 Sin errores 404.
 
+MINIRETO 9 - HERENCIA CSS
+
+Propiedad heredada:
+font-family
+
+Comprobación:
+Se aplicó en body y los párrafos heredaron la fuente Open Sans.
+
+Propiedad no heredada:
+background-color
+
+Comprobación:
+El color de fondo aplicado a body no se hereda automáticamente a otros elementos.

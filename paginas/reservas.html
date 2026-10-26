@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="icon" type="image" href="/rueda-libre/img/logo.jpeg" <link rel="stylesheet" href="CSS/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <title>Reservas | Rueda Libre</title>
 </head>
+
 <body>
     <header>
 
@@ -15,8 +22,8 @@
                 <li><a href="/rueda-libre/index.html">Volver al inicio</a></li>
                 <li><a href="/rueda-libre/paginas/tarifas.html">Ir a tarifas</a></li>
                 <li><a href="/rueda-libre/paginas/reservas.html">Ir a reservas</a></li>
-           </ul>
-      </nav>
+            </ul>
+        </nav>
 
     </header>
 
@@ -28,55 +35,29 @@
             <form>
 
                 <label for="nombre">Nombre completo:</label>
-                <input
-                type="text"
-                id="nombre"
-                name="nombre"
-                required
-                minlength="3" 
-                >
+                <input type="text" id="nombre" name="nombre" required minlength="3">
 
                 <br><br>
 
                 <label for="documento">Documento:</label>
-                <input
-                type="number"
-                id="documento"
-                name="documento"
-                required
-                pattern="[0-9]{6,10}"
-                title="Ingrese entre 6 y 10 digitos numericos">
+                <input type="number" id="documento" name="documento" required pattern="[0-9]{6,10}"
+                    title="Ingrese entre 6 y 10 digitos numericos">
 
                 <br><br>
 
                 <label for="correo">Correo:</label>
-                <input
-                type="email"
-                id="correo"
-                name="correo"
-                required>
+                <input type="email" id="correo" name="correo" required>
 
                 <br><br>
 
                 <label for="celular">Celular:</label>
-                <input
-                type="text"
-                id="celular"
-                name="celular"
-                required
-                pattern="3[0-9]{9}"
-                title="Debe tener 10 digitos y empezar por 3">
+                <input type="text" id="celular" name="celular" required pattern="3[0-9]{9}"
+                    title="Debe tener 10 digitos y empezar por 3">
 
                 <br><br>
 
                 <label for="fecha">Fecha del alquiler</label>
-                <input
-                type="date"
-                id="fecha"
-                name="fecha"
-                required
-                min="2026-11-01"
-                max="2026-12-31">
+                <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
 
                 <br><br>
 
@@ -101,29 +82,15 @@
                 <br><br>
 
                 <label for="cantidad">Cantidad de bicicletas: </label>
-                <input 
-                type="number"
-                id="cantidad"
-                name="cantidad"
-                required
-                min="1"
-                max="6">
+                <input type="number" id="cantidad" name="cantidad" required min="1" max="6">
 
                 <br><br>
 
-                <textarea 
-                id="comentarios"
-                name="comentarios"
-                maxlength="300"
-                ></textarea>
+                <textarea id="comentarios" name="comentarios" maxlength="300"></textarea>
 
                 <br><br>
 
-                <input
-                type="checkbox"
-                id="politicas"
-                name="politicas"
-                required>
+                <input type="checkbox" id="politicas" name="politicas" required>
 
                 <label for="politicas">Acepto las politicas de alquiler</label>
 
@@ -137,44 +104,46 @@
 
 
 
-            
+
             </form>
         </section>
 
         <section>
-       
-              <h2>Para realizar una reserva comunícate con nosotros:
-        <a href="mailito: camilojaramillomejia284@gmail.com">Consulta aqui</a></h2>
+
+            <h2>Para realizar una reserva comunícate con nosotros:
+                <a href="mailto:camilojaramillomejia284@gmail.com">Consulta aqui</a>
+            </h2>
 
         </section>
 
-    
 
-   
-     <aside>
-         <h2>Horario de atención</h2>
-             <dl>
-                  <dt>Lunes a viernes</dt>
-                  <dd>7:00 a. m - 7:00 p. m</dd>
-                  <dt>Sábados</dt>
-                  <dd>6:00 a. m - 2p. m</dd>
-                  <dt>Domingos y festivos</dt>
-                  <dd>6:00 a. m a 2 p . m</dd>
-              </dl>
 
-    
 
-              <a href="/paginas/reservas.html">
-              <button type="button" >reservar ahora</button>
-              </a>
-     </aside>
+        <aside>
+            <h2>Horario de atención</h2>
+            <dl>
+                <dt>Lunes a viernes</dt>
+                <dd>7:00 a. m - 7:00 p. m</dd>
+                <dt>Sábados</dt>
+                <dd>6:00 a. m - 2p. m</dd>
+                <dt>Domingos y festivos</dt>
+                <dd>6:00 a. m a 2 p . m</dd>
+            </dl>
+
+
+
+            <a href="/rueda-libre/paginas/reservas.html">
+                <button type="button">reservar ahora</button>
+            </a>
+        </aside>
     </main>
     <footer>
         <hr>
-            <p>Rueda Libre</p>
-            <p>hola@ruedalibre.example</p>
-            <p>2026</p>
+        <p>Rueda Libre</p>
+        <p>hola@ruedalibre.example</p>
+        <p>2026</p>
         </hr>
     </footer>
 </body>
+
 </html>
