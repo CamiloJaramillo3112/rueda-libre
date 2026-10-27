@@ -229,3 +229,48 @@ Conclusión:
 
 Con box-sizing: border-boxel ancho incluye padding y borde,
 facilitando el control del tamaño de los elementos.
+
+CIERRE DE LA SEMANA
+
+MINIRETO 1
+Creacion del repositorio y estructura initial
+
+Minireto 2
+Pagina principal con contenido, imagenes y enlaces.
+
+Minireto 3
+Paginas de tarifas y rutas relativas.
+
+Minireto 4
+Sitios navegables con reservas.
+
+Minireto 5
+
+Estructura semantica.
+
+
+Minireto 6
+
+Formulario de reservas.
+
+
+Minireto 7
+validaciones nativas.
+
+Minireto 8
+
+Accesibilidad y publicacion
+
+Minireto 9
+
+Variables CSS, colores y tipografias.
+
+Minireto 10
+Estados hover, focus y navegación.
+
+Minireto 11
+Posicionamiento, enlace flotante de whatssap y lanzamiento v1.0
+
+
+Mejoras futuras:
+Diseño responsive con Flexbox y Grid.
