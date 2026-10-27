@@ -274,3 +274,27 @@ Posicionamiento, enlace flotante de whatssap y lanzamiento v1.0
 
 Mejoras futuras:
 Diseño responsive con Flexbox y Grid.
+
+
+*******************************************************
+SEMANA 2
+
+MINIRETO 1-Flexbox
+
+Prueba de reducción de pantalla:
+
+Encabezado:
+Al disminuir el ancho, el menú pasó a una nueva linea gracias
+al flex-wrap.
+
+Pie de página:
+Los tres bloques permanecen alineados y cuando el espacio no es
+suficiente pasan a varias líneas sin desbordarse.
+
+Propiedades utilizadas:
+
+-display: flex
+-justify-content: space-between
+-align-items: center
+-flex-wrap: wrap
+-gap
