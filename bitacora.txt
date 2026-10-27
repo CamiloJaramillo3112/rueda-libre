@@ -298,3 +298,12 @@ Propiedades utilizadas:
 -align-items: center
 -flex-wrap: wrap
 -gap
+
+
+***************************************************
+
+MINIRETO 2- Grid
+
+1280 px: 3 columnas
+900 px: 3 columnas
+500 px: 1 columna
