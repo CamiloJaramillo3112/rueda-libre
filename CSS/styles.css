@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap');
 
 :root {
+    *{
+    box-sizing: border-box
+}
 
     /* Colores */
 
@@ -28,6 +31,69 @@ body {
     background-color: var(--crema);
 }
 
+main{
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--espacio-medio);
+}
+
+.portada{
+    min-height: 50vh;
+}
+
+.tarjeta{
+    padding: var(--espacio-medio);
+    margin-bottom: var(--espacio-medio);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 1rem;
+    blackground-color: white;
+}
+
+.tarjeta img{
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    collapse: collapse;
+    margin-bottom: var(--espacio-grande);
+
+}
+
+th {
+    blackground-color: var(--azul-noche);
+    color: var(--naranja-pedal);
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+
+}
+input,
+select,textarea {
+    width: 100%;
+    padding: var(--espacio-pequeno);
+    
+}
+
+form{
+    padding: var(--espacio-medio);
+
+}
+
+form section{
+    margin-bottom: var(--espacio-medio);
+}
+
+button{
+    padding: 1rem 2 rem;
+}
+
+
 #menu a:hover {
     color: var(--verde-ruta);
 
@@ -42,6 +108,12 @@ body {
     }
 
 
+}
+
+#menu{
+    display: flex;
+    gap:1rem;
+    list-style: none;
 }
 
 #menu a {

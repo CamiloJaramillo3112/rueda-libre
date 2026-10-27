@@ -215,3 +215,17 @@ Conflicto:
 Solucion:
 
 La regla .activo fue declarada despues de #menu a, por lo que  la cascada aplica el color verde sin usar !
+
+Minireto11 - MOdelo de CamiloJaramillo3112
+Medición realizada en DevTools
+
+Antes de border-box:
+Ancho total de tarjeta = 340 px
+
+Despues de border - box:
+Ancho total tarjeta = 300 px
+
+Conclusión:
+
+Con box-sizing: border-boxel ancho incluye padding y borde,
+facilitando el control del tamaño de los elementos.
