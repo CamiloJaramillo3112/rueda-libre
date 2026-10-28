@@ -307,3 +307,33 @@ MINIRETO 2- Grid
 1280 px: 3 columnas
 900 px: 3 columnas
 500 px: 1 columna
+
+
+**********************************************
+
+MINIRETO 3- LAYOUT EN DOS DIMENSIONES
+
+Portada: 
+Grid.
+Se utilizó Grid porque hay dos áreas principales:
+text e imagen.
+
+Galerias de rutas:
+Grid.
+Se utilizó Grid porque se requería una fila de tres tarjetas.
+
+Reservas:
+Grid.
+Se utilizó Grid para distribuir el formulario y el panel de contacto en proporción 2:1.
+
+Fila documento/celular:
+Grid.
+Se utilizó Grid para mostrar 2 campos alineados.
+
+Encabezado:
+Flexbox.
+Se utilizó Flexbox porque organiza elementos en una sola dimensión.
+
+Pie de página:
+Flexbox.
+Se utilizó Flexbox porque distribuye bloques en una sola fila.

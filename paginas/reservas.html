@@ -28,9 +28,9 @@
 
     </header>
 
-    <main>
+    <main class="reservas-layout">
 
-        <section class="Formulario">
+        <section class="formulario-reserva">
             <h2>Formulario de reserva</h2>
 
             <form>
@@ -39,23 +39,31 @@
                 <input type="text" id="nombre" name="nombre" required minlength="3">
 
                 <br><br>
+                <section class="datos-personales">
+                    <section>
 
-                <label for="documento">Documento:</label>
-                <input type="number" id="documento" name="documento" required pattern="[0-9]{6,10}"
-                    title="Ingrese entre 6 y 10 digitos numericos">
+                        <label for="documento">Documento:</label>
+                        <input type="number" id="documento" name="documento" required pattern="[0-9]{6,10}"
+                            title="Ingrese entre 6 y 10 digitos numericos">
+                    </section>
+                    
+                    <section>
 
-                <br><br>
+                        <label for="celular">Celular:</label>
+                        <input type="text" id="celular" name="celular" required pattern="3[0-9]{9}"
+                            title="Debe tener 10 digitos y empezar por 3">
+                    </section>
+                </section>
 
+                
                 <label for="correo">Correo:</label>
                 <input type="email" id="correo" name="correo" required>
 
                 <br><br>
 
-                <label for="celular">Celular:</label>
-                <input type="text" id="celular" name="celular" required pattern="3[0-9]{9}"
-                    title="Debe tener 10 digitos y empezar por 3">
 
-                <br><br>
+
+
 
                 <label for="fecha">Fecha del alquiler</label>
                 <input type="date" id="fecha" name="fecha" required min="2026-11-01" max="2026-12-31">
@@ -120,7 +128,7 @@
 
 
 
-        <aside>
+        <aside class="contacto">
             <h2>Horario de atención</h2>
             <dl>
                 <dt>Lunes a viernes</dt>

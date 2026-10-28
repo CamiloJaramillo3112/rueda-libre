@@ -3,7 +3,7 @@
 ====================================================*/
 
 :root {
-    
+
 
     /* Colores */
 
@@ -24,12 +24,14 @@
     --espacio-medio: 1rem;
     --espacio-grande: 2rem;
 }
+
 /*==================================================
 RESET
 ====================================================*/
-*{
+* {
     box-sizing: border-box
 }
+
 /*==================================================
 BASE
 ====================================================*/
@@ -39,14 +41,22 @@ body {
     color: var(--azul-noche);
     background-color: var(--crema);
 }
-body{
-padding-bottom: 5rem;
+
+body {
+    padding-bottom: 5rem;
 }
 
-main{
+main {
     max-width: 70rem;
     margin: 0 auto;
     padding: var(--espacio-medio);
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
 }
 
 /*==================================================
@@ -58,7 +68,7 @@ header {
     padding: var(--espacio-medio);
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,8 +79,9 @@ header{
 nav a {
     color: var(--verde-ruta);
 }
-nav{
-    display: flex; 
+
+nav {
+    display: flex;
 }
 
 #menu a:hover {
@@ -89,10 +100,10 @@ nav{
 
 }
 
-#menu{
+#menu {
     display: flex;
     flex-wrap: wrap;
-    gap:1rem;
+    gap: 1rem;
 
     list-style: none;
     padding: 0;
@@ -114,7 +125,7 @@ nav{
 /*==================================================
 TARGETAS
 ====================================================*/
-.tarjeta{
+.tarjeta {
     padding: var(--espacio-medio);
     margin-bottom: var(--espacio-medio);
     border: 1px solid var(--gris-asfalto);
@@ -122,17 +133,17 @@ TARGETAS
     blackground-color: rgb(255, 255, 255);
 }
 
-.tarjeta img{
+.tarjeta img {
     width: 100%;
     display: block;
     border-radius: 0.5rem;
 }
 
-.tarjeta-electrica{
+.tarjeta-electrica {
     position: relative;
 }
 
-.etiqueta-nuevo{
+.etiqueta-nuevo {
     position: absolute;
     top: 1rem;
     right: 1rem;
@@ -142,14 +153,14 @@ TARGETAS
     border-radius: 0.5rem;
 }
 
-.grid-flota{
+.grid-flota {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
     gap: 1.5rem;
-    
+
 }
 
-.tarjeta-flota{
+.tarjeta-flota {
     display: flex;
     flex-direction: column;
 
@@ -158,7 +169,32 @@ TARGETAS
     border-radius: 1rem;
 }
 
-.tarjeta-flota img{
+.tarjeta-flota img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.reservas-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.ruta{
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 1rem;
+    padding: 1rem;
+    blackground-color: rgb(255, 255, 255);
+}
+.galeria-rutas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+
+.ruta img {
     width: 100%;
     display: block;
     border-radius: 0.5rem;
@@ -167,7 +203,7 @@ TARGETAS
 /*==================================================
 TABLAS
 ====================================================*/
-table{
+table {
     width: 100%;
     border-collapse: collapse;
     collapse: collapse;
@@ -193,19 +229,21 @@ label {
     margin-bottom: 0.5rem;
 
 }
+
 input,
-select,textarea {
+select,
+textarea {
     width: 100%;
     padding: var(--espacio-pequeno);
-    
+
 }
 
-form{
+form {
     padding: var(--espacio-medio);
 
 }
 
-form section{
+form section {
     margin-bottom: var(--espacio-medio);
 }
 
@@ -217,6 +255,17 @@ form section{
     outline: 2px solid var(--naranja-pedal);
     outline-offset: 2px;
 
+}
+
+.datos-personales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+.reservas-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
 }
 
 /*==================================================
@@ -239,30 +288,31 @@ BOTONES
 WHATSSAPP BUTTON
 ====================================================*/
 .whatsapp-btn-flotante {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #25d366;
-  color: white;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  z-index: 9999;
-  transition: ease all 0.3s;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    transition: ease all 0.3s;
 }
 
 .whatsapp-btn-flotante:hover {
-  background-color: #128c7e;
-  transform: scale(1.1); /* Efecto de crecimiento sutil al pasar el mouse */
+    background-color: #128c7e;
+    transform: scale(1.1);
+    /* Efecto de crecimiento sutil al pasar el mouse */
 }
 
 
 
-.portada{
+.portada {
     min-height: 50vh;
 }
 
@@ -272,7 +322,7 @@ WHATSSAPP BUTTON
 
 
 
-button{
+button {
     padding: 1rem 2 rem;
 }
 
@@ -303,17 +353,10 @@ footer {
     padding: var(--espacio-medio);
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
 }
-
-
-
-
-
-
-
