@@ -54,9 +54,15 @@ main {
 
 .portada {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     align-items: center;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 /*==================================================
@@ -64,15 +70,14 @@ ENCABEZADO Y MENU
 ====================================================*/
 
 header {
-    background-color: var(--azul-noche);
+    background-color: var(--gris-asfalto);
     padding: var(--espacio-medio);
 }
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -102,12 +107,8 @@ nav {
 
 #menu {
     display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    align-items: center;
 
 }
 
@@ -117,7 +118,7 @@ nav {
 
 #menu a {
     text-decoration: none;
-    color: var(--gris-asfalto)
+    color: var(--azul-noche)
 }
 
 
@@ -155,8 +156,8 @@ TARGETAS
 
 .grid-flota {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 
 }
 
@@ -177,8 +178,8 @@ TARGETAS
 
 .reservas-layout {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
 }
 
 .ruta{
@@ -189,8 +190,8 @@ TARGETAS
 }
 .galeria-rutas {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 1rem;
     
 }
 
@@ -205,9 +206,7 @@ TABLAS
 ====================================================*/
 table {
     width: 100%;
-    border-collapse: collapse;
-    collapse: collapse;
-    margin-bottom: var(--espacio-grande);
+    font: size 0.8rem;
 
 }
 
@@ -259,7 +258,7 @@ form section {
 
 .datos-personales {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
 }
 .reservas-layout {
@@ -316,6 +315,10 @@ WHATSSAPP BUTTON
     min-height: 50vh;
 }
 
+.portada-imagen{
+
+}
+
 
 
 
@@ -359,4 +362,60 @@ footer {
     align-items: flex-start;
     flex-wrap: wrap;
     gap: 1rem;
+}
+
+@media (min-width:768px){
+
+    .portada{
+        grid-template-colums: 1fr 1fr;
+    }
+
+    .galeria-rutas{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-flota{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .reservas-layout{
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .datos-personales{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #menu{
+        flex-direction: row;
+    }
+
+    footer{
+        flex-direction: row;
+    }
+
+}
+
+@media (min-width: 1200px){
+
+    .grid-flota{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    .galeria-rutas{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+
+}
+
+@media (min-width:768px){
+    table{
+        font-size: 1rem;
+    }
 }
