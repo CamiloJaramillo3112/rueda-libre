@@ -337,3 +337,52 @@ Se utilizó Flexbox porque organiza elementos en una sola dimensión.
 Pie de página:
 Flexbox.
 Se utilizó Flexbox porque distribuye bloques en una sola fila.
+
+
+*********************************************************************
+
+MiniReto 4
+
+
+
+
+
+
+
+
+
+
+MINIRETO 5
+BOOTSTRAP
+
+
+
+
+2. ¿Qué me facilitó Bootstrap?
+Con Bootstrap conseguí:
+- Una distribución responsive sin escribir media queries.
+- Tarjetas con diseño uniforme.
+- Separación entre bicicletas mediante g-4.
+- Botones grandes y visibles sin crear estilos propios.
+- Sombras y presentación visual con clases prediseñadas.
+3. ¿Qué control perdí?
+Al utilizar Bootstrap tengo menos libertad para definir cada detalle visual.
+
+Por ejemplo:
+- Tamaños de imágenes completamente personalizados.
+- Espaciados con medidas específicas.
+- Colores y sombras particulares.
+- Efectos de movimiento y animaciones.
+- Distribuciones que no coincidan con los puntos de ruptura predeterminados.
+Puedo recuperar parte de ese control combinando otras utilidades de Bootstrap.
+4. Tiempo y líneas de código
+Para completar esta parte de tu informe:
+Indicador	Resultado
+Tiempo de implementación	Por medir
+Líneas de CSS personalizado para distribución en Bootstrap	0
+Clases Bootstrap utilizadas	15 aproximadamente
+Cantidad de bicicletas	7
+
+
+No tengo tu CSS anterior para calcular cuántas líneas eliminaste ni el tiempo real que invertiste. No sería correcto inventar esas cifras.
+
