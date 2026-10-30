@@ -82,7 +82,7 @@ header {
 }
 
 nav a {
-    color: var(--verde-ruta);
+    color: var(--azul-noche);
 }
 
 nav {
@@ -99,7 +99,7 @@ nav {
 
     boton:hover {
         blackground-color:
-            var(--azul-noche);
+            var(--verde-ruta);
     }
 
 
