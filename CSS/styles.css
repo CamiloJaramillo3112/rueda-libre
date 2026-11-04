@@ -69,57 +69,6 @@ img{
 ENCABEZADO Y MENU
 ====================================================*/
 
-header {
-    background-color: var(--gris-asfalto);
-    padding: var(--espacio-medio);
-}
-
-header {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-nav a {
-    color: var(--azul-noche);
-}
-
-nav {
-    display: flex;
-}
-
-#menu a:hover {
-    color: var(--verde-ruta);
-
-    #menu a:focus {
-        outline: 3px solid var(--naranja-pedal);
-        outline-offset: 3px;
-    }
-
-    boton:hover {
-        blackground-color:
-            var(--verde-ruta);
-    }
-
-
-}
-
-#menu {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-#menu a {
-    color: var(--gris-asfalto);
-}
-
-#menu a {
-    text-decoration: none;
-    color: var(--azul-noche)
-}
 
 
 
@@ -204,20 +153,7 @@ TARGETAS
 /*==================================================
 TABLAS
 ====================================================*/
-table {
-    width: 100%;
-    font: size 0.8rem;
 
-}
-
-th {
-    blackground-color: var(--azul-noche);
-    color: var(--naranja-pedal);
-}
-
-table {
-    margin-bottom: var(--espacio-grande);
-}
 
 /*==================================================
 FORMULARIOS

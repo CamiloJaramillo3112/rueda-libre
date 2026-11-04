@@ -386,3 +386,4 @@ Cantidad de bicicletas	7
 
 No tengo tu CSS anterior para calcular cuántas líneas eliminaste ni el tiempo real que invertiste. No sería correcto inventar esas cifras.
 
+*****************************************************

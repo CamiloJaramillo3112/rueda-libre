@@ -10,20 +10,38 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../CSS/styles.css">
+     <script src="https://cdn.tailwindcss.com"></script>
     <title>Reservas | Rueda Libre</title>
 </head>
 
 <body>
     <header>
+        
 
-        <h1>Reserva tu bicicleta</h1>
-        <nav id="menu">
+        <nav class="flex items-center justify-between bg-[#4b5563] p-4 text-white">
 
-            <ul class="activo">
-                <li><a href="/rueda-libre/index.html">Volver al inicio</a></li>
-                <li><a href="../paginas/tarifas.html">Ir a tarifas</a></li>
-                <li class="activo"><a href="./reservas.html">Ir a reservas</a></li>
-            </ul>
+
+
+            <div>
+                <h1>Rueda Libre</h1>
+                <img src="../img/logo.jpeg" alt="Rodafácil" class="h-16 w-auto mix-blend-multiply" />
+            </div>
+
+            <!-- 3. Lado Derecho: Menú separado en botones -->
+            <div class="flex gap-3">
+                <a href="../index.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Inicio
+                </a>
+                <a href="./tarifas.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Tarifas y Rutas
+                </a>
+                <a href="./reservas.html"
+                    class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
+                    Reservas
+                </a>
+            </div>
         </nav>
 
     </header>

@@ -14,17 +14,37 @@
     <link rel="stylesheet" href="./CSS/styles.css">
     <title>Rueda Libre | Alquiler de bicicletas en Medellín</title>
     <link rel="icon" type="image" href="CSS/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
     <header>
-        <h1>Rueda Libre</h1>
-        <nav>
-            <ul id="menu">
-                <li class="activo"><a href="../rueda-libre/index.html">Inicio</a></li>
-                <li><a href="../rueda-libre/paginas/tarifas.html">Tarifas y Rutas</a></li>
-                <li><a href="../rueda-libre/paginas/reservas.html">Reservas</a></li>
-            </ul>
+        
+
+        <nav class="flex items-center justify-between bg-[#4b5563] p-4 text-white">
+
+
+
+            <div>
+                <h1>Rueda Libre</h1>
+                <img src="./img/logo.jpeg" alt="Rodafácil" class="h-16 w-auto mix-blend-multiply" />
+            </div>
+
+            <!-- 3. Lado Derecho: Menú separado en botones -->
+            <div class="flex gap-3">
+                <a href="./index.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Inicio
+                </a>
+                <a href="./paginas/tarifas.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Tarifas y Rutas
+                </a>
+                <a href="./paginas/reservas.html"
+                    class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
+                    Reservas
+                </a>
+            </div>
         </nav>
 
     </header>
@@ -131,7 +151,7 @@
         </section>
 
 
-        
+
         <section class="container py-5">
 
             <div class="text-center mb-5">
@@ -146,8 +166,7 @@
                 <!-- Bicicleta 1 -->
                 <article class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="./img/bicicletaurbana.jpeg" class="card-img-top img-fluid"
-                            alt="Bicicleta urbana">
+                        <img src="./img/bicicletaurbana.jpeg" class="card-img-top img-fluid" alt="Bicicleta urbana">
 
                         <div class="card-body text-center">
                             <h3 class="h4 fw-bold">Urbana Clásica</h3>
@@ -212,8 +231,7 @@
                 <!-- Bicicleta 4 -->
                 <article class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="./img/bicicletainfantil.jpeg" class="card-img-top img-fluid"
-                            alt="Bicicleta infantil">
+                        <img src="./img/bicicletainfantil.jpeg" class="card-img-top img-fluid" alt="Bicicleta infantil">
 
                         <div class="card-body text-center">
                             <h3 class="h4 fw-bold">Infantil</h3>
@@ -234,8 +252,7 @@
                 <!-- Bicicleta 5 -->
                 <article class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="./img/bicicletaplegable.jpeg" class="card-img-top img-fluid"
-                            alt="Bicicleta plegable">
+                        <img src="./img/bicicletaplegable.jpeg" class="card-img-top img-fluid" alt="Bicicleta plegable">
 
                         <div class="card-body text-center">
                             <h3 class="h4 fw-bold">Urbana Plegable</h3>
@@ -256,8 +273,7 @@
                 <!-- Bicicleta 6 -->
                 <article class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="./img/bicicletagravel.jpeg" class="card-img-top img-fluid"
-                            alt="Bicicleta gravel">
+                        <img src="./img/bicicletagravel.jpeg" class="card-img-top img-fluid" alt="Bicicleta gravel">
 
                         <div class="card-body text-center">
                             <h3 class="h4 fw-bold">Gravel Aventura</h3>
@@ -278,8 +294,7 @@
                 <!-- Bicicleta 7 -->
                 <article class="col-12 col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm border-0">
-                        <img src="./img/bicicletatandem.jpeg" class="card-img-top img-fluid"
-                            alt="Bicicleta tándem">
+                        <img src="./img/bicicletatandem.jpeg" class="card-img-top img-fluid" alt="Bicicleta tándem">
 
                         <div class="card-body text-center">
                             <h3 class="h4 fw-bold">Tándem</h3>
@@ -301,7 +316,7 @@
         </section>
 
 
-        
+
         <section>
 
             <h2 id="encuentreanos">Encuéntranos</h2>

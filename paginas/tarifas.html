@@ -10,112 +10,137 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
+         <script src="https://cdn.tailwindcss.com"></script>
     <title>Tarifas | Rueda Libre</title>
 </head>
 
 <body>
     <header>
-        <nav id="menu">
-            <ul class="activo">
-                <li><a href="../index.html">inicio</a></li>
-                <li class="activo"><a href="../paginas/tarifas.html">Tarifas y Rutas</a></li>
-                <li><a href="../paginas/reservas.html">Reservas</a></li>
-            </ul>
+        
+
+        <nav class="flex items-center justify-between bg-[#4b5563] p-4 text-white">
+
+
+
+            <div>
+                <h1>Rueda Libre</h1>
+                <img src="../img/logo.jpeg" alt="Rodafácil" class="h-16 w-auto mix-blend-multiply" />
+            </div>
+
+            <!-- 3. Lado Derecho: Menú separado en botones -->
+            <div class="flex gap-3">
+                <a href="../index.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Inicio
+                </a>
+                <a href="./paginas/tarifas.html"
+                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
+                    Tarifas y Rutas
+                </a>
+                <a href="./reservas.html"
+                    class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
+                    Reservas
+                </a>
+            </div>
         </nav>
+
     </header>
 
     <main>
 
-        <section>
+        <div class="space-y-12 p-6 bg-[#fdfbf7] min-h-screen font-sans text-gray-800">
 
-            <h1>Tarifas y Recorridos</h1>
+  <!-- ================= SECCIÓN 1: TARIFAS DE ALQUILER ================= -->
+  <section>
+    <h2 class="text-2xl font-bold text-slate-900 mb-2">Tarifas de alquiler</h2>
+    <p class="text-sm text-amber-600 font-semibold mb-4">Tarifas de alquiler de bicicletas</p>
+    
+    <!-- Contenedor responsive para scroll horizontal en móvil -->
+    <div class="w-full overflow-x-auto rounded-xl border border-slate-200 shadow-sm bg-white">
+      <table class="w-full min-w-[600px] text-left border-collapse">
+        <thead>
+          <tr class="border-b border-slate-200 bg-slate-50 text-amber-600 font-bold text-sm">
+            <th class="p-4">Tipo de bicicleta</th>
+            <th class="p-4">1 hora</th>
+            <th class="p-4">Medio día (4h)</th>
+            <th class="p-4">Día completo</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 text-sm">
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Urbana</td>
+            <td class="p-4 text-slate-600">$10.000</td>
+            <td class="p-4 text-slate-600">$30.000</td>
+            <td class="p-4 text-slate-700 font-medium">$50.000</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Montaña</td>
+            <td class="p-4 text-slate-600">$15.000</td>
+            <td class="p-4 text-slate-600">$45.000</td>
+            <td class="p-4 text-slate-700 font-medium">$70.000</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Eléctrica</td>
+            <td class="p-4 text-slate-600">$25.000</td>
+            <td class="p-4 text-slate-600">$70.000</td>
+            <td class="p-4 text-slate-700 font-medium">$110.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-            <img src="../img/logo.jpeg" alt="logo de la empresa" width="200pmx">
+  <!-- ================= SECCIÓN 2: RECORRIDOS GUIADOS ================= -->
+  <section>
+    <h2 class="text-2xl font-bold text-slate-900 mb-2">Recorridos guiados</h2>
+    <p class="text-sm text-amber-600 font-semibold mb-4">Recorridos disponibles</p>
+    
+    <!-- Contenedor responsive para scroll horizontal en móvil -->
+    <div class="w-full overflow-x-auto rounded-xl border border-slate-200 shadow-sm bg-white">
+      <table class="w-full min-w-[600px] text-left border-collapse">
+        <thead>
+          <tr class="border-b border-slate-200 bg-slate-50 text-amber-600 font-bold text-sm">
+            <th class="p-4">Recorrido</th>
+            <th class="p-4">Distancia</th>
+            <th class="p-4">Duración</th>
+            <th class="p-4">Nivel</th>
+            <th class="p-4">Precio por persona</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100 text-sm">
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Ríos y parques</td>
+            <td class="p-4 text-slate-600">12 km</td>
+            <td class="p-4 text-slate-600">2 h</td>
+            <td class="p-4">
+              <span class="px-2.5 py-1 text-xs font-medium bg-green-100 text-green-800 rounded-full">Fácil</span>
+            </td>
+            <td class="p-4 text-slate-700 font-semibold">$45.000</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Sabores de Barrio</td>
+            <td class="p-4 text-slate-600">18 km</td>
+            <td class="p-4 text-slate-600">3 h</td>
+            <td class="p-4">
+              <span class="px-2.5 py-1 text-xs font-medium bg-yellow-100 text-yellow-800 rounded-full">Medio</span>
+            </td>
+            <td class="p-4 text-slate-700 font-semibold">$60.000</td>
+          </tr>
+          <tr class="hover:bg-slate-50 transition">
+            <td class="p-4 font-semibold text-amber-600">Reto Las Palmas</td>
+            <td class="p-4 text-slate-600">25 km</td>
+            <td class="p-4 text-slate-600">4 h</td>
+            <td class="p-4">
+              <span class="px-2.5 py-1 text-xs font-medium bg-red-100 text-red-800 rounded-full">Difícil</span>
+            </td>
+            <td class="p-4 text-slate-700 font-semibold">$85.000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
 
-            <h2>Tarifas de alquiler</h2>
-
-            <table border="1">
-                <caption>Tarifas de alquiler de bicicletas</caption>
-                <thead>
-                    <tr>
-                        <th scope="col">Tipo de bicicleta</th>
-                        <th scope="col">1 hora</th>
-                        <th scope="col">Medio día (4h)</th>
-                        <th scope="col">Día completo</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <th scope="row">Urbana</th>
-                        <td>$10.000</td>
-                        <td>$30.000</td>
-                        <td>50.000</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">Montaña</th>
-                        <td>$15.000</td>
-                        <td>$45.000</td>
-                        <td>$70.000</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Eléctrica</th>
-                        <td>$25.000</td>
-                        <td>$70.000</td>
-                        <td>$110.000</td>
-                    </tr>
-
-                </tbody>
-
-
-            </table>
-
-            <br>
-
-            <h2 id="recorridos">Recorridos guiados</h2>
-            <table border="1">
-                <caption>Recorridos disponibles</caption>
-
-                <thead>
-                    <tr>
-                        <th scope="col">Recorrido</th>
-                        <th scope="col">Distancia</th>
-                        <th scope="col">Duración</th>
-                        <th scope="col">Nivel</th>
-                        <th scope="col">Precio por persona</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-
-                    <tr>
-                        <th scope="row">Rios y parques</th>
-                        <td>12 km</td>
-                        <td>2 h</td>
-                        <td>Facil</td>
-                        <td>$45.000</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Sabores de Barrio</th>
-                        <td>18 km</td>
-                        <td>3 h</td>
-                        <td>Medio</td>
-                        <td>$60.000</td>
-
-                    </tr>
-                    <tr>
-                        <th scope="row">Reto Las Palmas</th>
-                        <td>25 km</td>
-                        <td>4 h</td>
-                        <td>Dificil</td>
-                        <td>$85.000</td>
-
-                    </tr>
-                </tbody>
-            </table>
-        </section>
+</div>
        
 
         <aside>
@@ -132,7 +157,7 @@
                 <li>Protector solar.</li>
                 <li>Documento de identidad.</li>
             </ul>
-            <a href="paginas/reservas.html">
+            <a href="./reservas.html">
                 <button type="button">reservar ahora</button>
             </a>
         </aside>
@@ -142,7 +167,7 @@
 
 
     <p>
-        <a href="index.html">volver al inicio</a>
+        <a href="../index.html">volver al inicio</a>
     </p>
 
 
