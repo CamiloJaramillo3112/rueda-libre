@@ -1,5 +1,24 @@
 {
   "dependencies": {
-    "bootstrap": "^5.3.8"
-  }
+    "bootstrap": "^5.3.8",
+    "tailwindcss": "^4.3.5"
+  },
+  "name": "rueda-libre",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamiloJaramillo3112/rueda-libre.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamiloJaramillo3112/rueda-libre/issues"
+  },
+  "homepage": "https://github.com/CamiloJaramillo3112/rueda-libre#readme",
+  "description": ""
 }
