@@ -387,3 +387,53 @@ Cantidad de bicicletas	7
 No tengo tu CSS anterior para calcular cuántas líneas eliminaste ni el tiempo real que invertiste. No sería correcto inventar esas cifras.
 
 *****************************************************
+Minireto Semana 3
+dia 1
+
+Diferencia entre Bootstrap y Tailwind
+
+Bootstrap                            Tailwind CSS
+Framework basado en componentes    Framework basado en clases unitarias
+y clases predefinidas
+
+btn btn-primary                    bg-blue-600
+                                   px-4 py-2
+                                    rounded
+
+navbar                             Construyes el menú combinando
+                                   utilidades
+navbar-expand-lang
+
+Ofrece componentes listos          Ofrece mayor control sobre cada
+                                   elementos
+
+
+
+Para desarrollar el prototipo de la campaña Rueda Nocturna
+utilicé Taildwind CSS mediante Play CDN.
+
+Construí una sección principal que contiene el título de la campaña,
+un subtítulo descriptivo, dos tarjetas informativas con las rutas
+disponibles y el precio desde $55.000, y un enlace de inscripción conapariencia de botón.
+
+Implementación responsive
+Utilicé clases como flex, grid grid-cols.1, sm: grid-cols, max-w-6xl y px-6
+para adaptar la distribución del contenido a diferentes tamaños de pantalla.
+
+
+Comparación entre Bootstrap y Tailwind
+
+En Bootstrap utilicé clases predefinidas como btn y btn-primary para crear
+botones rapidamente.
+
+En Tailwind construí el mismo elemento combinando utilidades como bg-amber-400, px-10, py-4 rounded-xl y font-extrabold
+
+La diferencia principal es que Bootstrap proporciona componentes
+con estilos predeterminados, mientras que Tailwind permite personalizar cada
+elemento mediante clases utilitarias.
+
+Conclusión
+
+Este ejercicio me permitió comprender cómo utilizar Tailwind CSS
+para construir interfaces responsive, aplicar estilos directamente desde
+HTML y diferenciar el enfoque de desarrollo de Bootstrap y Tailwind.
