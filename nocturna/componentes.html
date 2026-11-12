@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>Kit de componentes | Rueda Nocturna</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/output.css">
+</head>
+
+<body class="min-h-screen bg-crema font-texto text-azul-noche dark:bg-azul-noche dark:text-crema">
+    <main class="mx-auto max-w-3xl space-y-12 px-4 py-10 sm:px-6">
+
+        <h1 class="font-titulos text-4xl font-bold text-verde-ruta dark:text-amarillo-farol">Kit de componentes</h1>
+
+        <!-- Botón principal -->
+        <section>
+            <h2 class="mb-4 font-titulos text-2xl font-bold">Botón principal</h2>
+            <a href="#"
+                class="inline-block rounded-full bg-verde-ruta px-6 py-3 text-lg font-semibold text-crema hover:bg-azul-noche dark:bg-amarillo-farol dark:text-azul-noche dark:hover:bg-naranja-pedal">
+                Inscríbete
+            </a>
+        </section>
+
+        <!-- Enlace de navegación -->
+        <section>
+            <h2 class="mb-4 font-titulos text-2xl font-bold">Enlace de navegación</h2>
+            <a href="#"
+                class="text-sm font-semibold text-gris-asfalto hover:text-verde-ruta dark:text-crema dark:hover:text-amarillo-farol">Rutas</a>
+        </section>
+
+        <!-- Card de ruta -->
+        <section>
+            <h2 class="mb-4 font-titulos text-2xl font-bold">Card de ruta</h2>
+            <article class="rounded-2xl border border-gris-asfalto bg-white p-7 shadow-lg dark:bg-white/5">
+                <h3 class="font-titulos text-xl font-bold text-verde-ruta dark:text-amarillo-farol">Ruta Centro Iluminado</h3>
+                <p class="mt-2 text-sm text-gris-asfalto dark:text-crema/75">Plazas, edificios y calles del centro de noche.</p>
+            </article>
+        </section>
+
+        <!-- Card de paso -->
+        <section>
+            <h2 class="mb-4 font-titulos text-2xl font-bold">Card de paso</h2>
+            <div class="rounded-2xl border border-gris-asfalto bg-white p-7 shadow-lg dark:bg-white/5">
+                <p class="font-titulos text-4xl font-bold text-verde-ruta dark:text-amarillo-farol">1</p>
+                <h3 class="mt-2 font-titulos text-lg font-bold">Elige tu ruta</h3>
+                <p class="mt-1 text-sm text-gris-asfalto dark:text-crema/75">Escoge la que más te guste.</p>
+            </div>
+        </section>
+
+        <!-- Campo de texto -->
+        <section>
+            <h2 class="mb-4 font-titulos text-2xl font-bold">Campo de texto</h2>
+            <label for="correo" class="mb-2 block text-sm font-semibold">Correo</label>
+            <input type="email" id="correo" placeholder="tucorreo@ejemplo.com"
+                class="w-full rounded-lg border border-gris-asfalto bg-white px-4 py-3 text-azul-noche placeholder:text-gris-asfalto dark:border-crema/60 dark:bg-white/5 dark:text-crema dark:placeholder:text-crema/75">
+        </section>
+
+    </main>
+</body>
+
+</html>

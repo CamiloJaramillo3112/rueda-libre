@@ -1,1 +1,33 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+@theme {
+  /* Colores de marca (los cinco del sitio + Amarillo Farol de la campaña) */
+  --color-verde-ruta: #1e7a4f;
+  --color-naranja-pedal: #f39a2b;
+  --color-azul-noche: #14213d;
+  --color-crema: #faf6ef;
+  --color-gris-asfalto: #5b6470;
+  --color-amarillo-farol: #ffd166;
+
+  /* Tipografías de marca */
+  --font-titulos: "Montserrat", Arial, sans-serif;
+  --font-texto: "Open Sans", Arial, sans-serif;
+}
+
+/* Foco visible con teclado, en ambos modos */
+@layer base {
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible {
+    outline: 3px solid var(--color-azul-noche);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible {
+      outline-color: var(--color-amarillo-farol);
+    }
+  }
+}
