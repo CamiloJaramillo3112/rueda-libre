@@ -1,0 +1,429 @@
+/*==================================================
+VARIABLES GLOBALES (único lugar donde hay códigos de color)
+====================================================*/
+:root {
+
+    /* Colores de marca */
+    --verde-ruta: #1E7A4F;
+    --naranja-pedal: #F39A2B;
+    --azul-noche: #14213D;
+    --crema: #FAF6EF;
+    --gris-asfalto: #5B6470;
+
+    /* Tipografías (con respaldo) */
+    --fuente-titulos: "Montserrat", Arial, sans-serif;
+    --fuente-texto: "Open Sans", Arial, sans-serif;
+
+    /* Escala de espaciado */
+    --espacio-pequeno: 0.5rem;
+    --espacio-medio: 1rem;
+    --espacio-grande: 2rem;
+    --espacio-xl: 3rem;
+}
+
+/*==================================================
+RESET
+====================================================*/
+* {
+    box-sizing: border-box;
+}
+
+/*==================================================
+BASE (se hereda desde el body)
+====================================================*/
+body {
+    font-family: var(--fuente-texto);
+    color: var(--azul-noche);
+    background-color: var(--crema);
+    padding-bottom: 5rem;
+}
+
+/* Todos los encabezados con un solo selector agrupado */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--fuente-titulos);
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: var(--espacio-pequeno);
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+    padding: var(--espacio-medio);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Enlaces dentro del contenido: Verde Ruta sobre Crema = 4.93:1 */
+main a:not(.boton):not(.btn) {
+    color: var(--verde-ruta);
+    text-decoration: underline;
+}
+
+/* Foco visible con teclado: Azul Noche sobre Crema = 14.83:1 */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--azul-noche);
+    outline-offset: 3px;
+}
+
+/*==================================================
+ENCABEZADO Y MENU
+====================================================*/
+.encabezado {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+}
+
+.menu-enlace {
+    display: inline-block;
+    padding: var(--espacio-pequeno) var(--espacio-medio);
+    border: 1px solid var(--crema);
+    border-radius: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--crema);
+    text-decoration: none;
+}
+
+/* Crema sobre Verde Ruta = 4.93:1 */
+.menu-enlace-principal {
+    background-color: var(--verde-ruta);
+    border-color: var(--verde-ruta);
+}
+
+/* Azul Noche sobre Naranja Pedal = 7.20:1 */
+.menu-enlace:hover {
+    background-color: var(--naranja-pedal);
+    border-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+}
+
+.menu-enlace[aria-current="page"] {
+    text-decoration: underline;
+}
+
+.encabezado a:focus-visible,
+footer a:focus-visible {
+    outline-color: var(--naranja-pedal);
+}
+
+/*==================================================
+TARJETAS
+====================================================*/
+.tarjeta {
+    padding: var(--espacio-medio);
+    margin-bottom: var(--espacio-medio);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 1rem;
+}
+
+.tarjeta img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.tarjeta-electrica {
+    position: relative;
+}
+
+.etiqueta-nuevo {
+    position: absolute;
+    top: var(--espacio-medio);
+    right: var(--espacio-medio);
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+    font-weight: 600;
+    padding: var(--espacio-pequeno) var(--espacio-medio);
+    border-radius: 0.5rem;
+}
+
+.grid-flota {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-medio);
+}
+
+.tarjeta-flota {
+    display: flex;
+    flex-direction: column;
+    padding: var(--espacio-medio);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 1rem;
+}
+
+.tarjeta-flota img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.ruta {
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 1rem;
+    padding: var(--espacio-medio);
+}
+
+.galeria-rutas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-medio);
+}
+
+.ruta img {
+    width: 100%;
+    display: block;
+    border-radius: 0.5rem;
+}
+
+.portada {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-medio);
+    align-items: center;
+    min-height: 50vh;
+}
+
+.reservas-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-medio);
+}
+
+/*==================================================
+TABLAS (página de tarifas)
+====================================================*/
+.subtitulo {
+    color: var(--verde-ruta);
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin-bottom: var(--espacio-medio);
+}
+
+.tabla-contenedor {
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 0.75rem;
+}
+
+.tabla {
+    border-collapse: collapse;
+}
+
+.tabla thead {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+}
+
+.tabla th,
+.tabla td {
+    padding: var(--espacio-medio);
+    text-align: left;
+}
+
+.tabla tbody tr {
+    border-bottom: 1px solid var(--gris-asfalto);
+}
+
+.tabla tbody th {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+.nivel {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border: 1px solid currentColor;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.nivel-facil {
+    color: var(--verde-ruta);
+}
+
+.nivel-medio {
+    color: var(--gris-asfalto);
+}
+
+.nivel-dificil {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+}
+
+/*==================================================
+FORMULARIOS
+====================================================*/
+label {
+    display: block;
+    margin-bottom: var(--espacio-pequeno);
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: var(--espacio-pequeno);
+    border: 1px solid var(--gris-asfalto);
+    border-radius: 0.5rem;
+    background-color: var(--crema);
+    color: var(--azul-noche);
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+form {
+    padding: var(--espacio-medio);
+}
+
+form section {
+    margin-bottom: var(--espacio-medio);
+}
+
+.datos-personales {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--espacio-medio);
+}
+
+/*==================================================
+BOTONES: Crema sobre Verde Ruta = 4.93:1
+====================================================*/
+.boton,
+button {
+    display: inline-block;
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    padding: 0.75rem var(--espacio-grande);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.boton:hover,
+button:hover {
+    background-color: var(--naranja-pedal);
+    color: var(--azul-noche);
+}
+
+.activo {
+    color: var(--verde-ruta);
+    font-weight: 600;
+}
+
+/*==================================================
+WHATSAPP: Crema sobre Verde Ruta
+====================================================*/
+.whatsapp-btn-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--verde-ruta);
+    color: var(--crema);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px color-mix(in srgb, var(--azul-noche) 40%, transparent);
+    z-index: 9999;
+    transition: ease all 0.3s;
+}
+
+.whatsapp-btn-flotante:hover {
+    background-color: var(--azul-noche);
+    transform: scale(1.1);
+}
+
+/*==================================================
+PIE DE PÁGINA: Crema sobre Azul Noche = 14.83:1
+====================================================*/
+footer {
+    background-color: var(--azul-noche);
+    color: var(--crema);
+    padding: var(--espacio-medio);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: var(--espacio-medio);
+}
+
+footer a {
+    color: var(--crema);
+    text-decoration: underline;
+}
+
+/*==================================================
+RESPONSIVE
+====================================================*/
+@media (min-width: 768px) {
+
+    .portada {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .galeria-rutas {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-flota {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservas-layout {
+        grid-template-columns: 2fr 1fr;
+        gap: var(--espacio-grande);
+    }
+
+    .datos-personales {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .grid-flota {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .galeria-rutas {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

@@ -4,40 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas | Rueda Libre</title>
     <link rel="icon" type="image/jpeg" href="../img/logo.jpeg">
+
+    <!-- Google Fonts primero, luego la hoja de estilos -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Reservas | Rueda Libre</title>
 </head>
 
 <body>
     <header>
 
-        <nav class="flex items-center justify-between bg-[#4b5563] p-4 text-white">
+        <nav class="encabezado flex items-center justify-between p-4">
 
             <div>
                 <h1>Rueda Libre</h1>
                 <img src="../img/logo.jpeg" alt="" class="h-16 w-auto mix-blend-multiply" />
             </div>
 
-            <!-- Lado derecho: menú -->
             <div class="flex gap-3">
-                <a href="../index.html"
-                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
-                    Inicio
-                </a>
-                <a href="./tarifas.html"
-                    class="rounded-lg bg-slate-700 px-4 py-2 text-sm font-medium transition hover:bg-slate-600">
-                    Tarifas y Rutas
-                </a>
-                <a href="./reservas.html"
-                    class="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white transition hover:bg-blue-500">
-                    Reservas
-                </a>
+                <a href="../index.html" class="menu-enlace">Inicio</a>
+                <a href="./tarifas.html" class="menu-enlace">Tarifas y Rutas</a>
+                <a href="./reservas.html" class="menu-enlace menu-enlace-principal" aria-current="page">Reservas</a>
             </div>
         </nav>
 
@@ -144,7 +136,6 @@
         </aside>
     </main>
     <footer>
-        <hr>
         <p>Rueda Libre</p>
         <p>hola@ruedalibre.example</p>
         <p>2026</p>

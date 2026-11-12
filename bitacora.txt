@@ -486,3 +486,39 @@ Ancho   | Encabezado             | Rutas       | Pasos       | Scroll horizontal
 
 
 ***************************************************
+
+
+MINIRETO 9 - LA IDENTIDAD DE RUEDA LIBRE
+
+Hoja de estilos: css/styles.css, enlazada en index.html (./css/styles.css),
+paginas/tarifas.html y paginas/reservas.html (../css/styles.css).
+Las fuentes se cargan antes de la hoja: preconnect + Google Fonts
+(Montserrat 700, Open Sans 400 y 600).
+
+Variables en :root:
+- Colores: --verde-ruta, --naranja-pedal, --azul-noche, --crema, --gris-asfalto
+- Fuentes: --fuente-titulos (Montserrat, Arial, sans-serif),
+  --fuente-texto (Open Sans, Arial, sans-serif)
+- Espaciado (rem): --espacio-pequeno 0.5, --espacio-medio 1,
+  --espacio-grande 2, --espacio-xl 3
+
+Herencia:
+- body define font-family, color y background-color con variables.
+- h1..h6 usan un solo selector agrupado con --fuente-titulos y peso 700.
+
+Combinaciones usadas (todas aprobadas en el mapa de color):
+Azul Noche/Crema, Gris Asfalto/Crema, Verde Ruta/Crema, Crema/Verde Ruta,
+Crema/Azul Noche, Azul Noche/Naranja Pedal.
+
+Comprobación de herencia en DevTools (Computed):
+- Propiedad que SÍ se hereda: font-family. En <body> es Open Sans y un <p>
+  la recibe sin tener regla propia. (confirma en Computed)
+- Propiedad que NO se hereda: background-color (o border). Aplicada al body,
+  el <p> muestra transparent. (confirma en Computed)
+
+Network: las tres páginas cargan styles.css y las dos fuentes con estado 200.
+(confirma en la pestaña Network)
+
+HTML sin style="" ni <style>: revisado en las tres páginas.
+
+*************************************************************
