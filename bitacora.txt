@@ -437,3 +437,52 @@ Conclusión
 Este ejercicio me permitió comprender cómo utilizar Tailwind CSS
 para construir interfaces responsive, aplicar estilos directamente desde
 HTML y diferenciar el enfoque de desarrollo de Bootstrap y Tailwind.
+
+
+*************************************************************************************************
+
+MINIRETO - LAYOUT DE LA LANDING RUEDA NOCTURNA
+
+Encabezado: Flexbox (justify-between, items-center). Es una sola fila
+con logo a la izquierda y enlaces + botón a la derecha.
+
+Rutas: Grid (grid-cols-3 gap-6). Son tres cards de igual ancho
+en una cuadrícula de tres columnas.
+
+¿Cómo funciona?: Grid (grid-cols-4 gap-6). Son cuatro pasos de igual
+ancho y Grid reparte las columnas sin calcular anchos a mano.
+
+Pie de página: Flexbox (justify-between, items-center). Son tres bloques
+en una sola dimensión.
+
+Contenedor común: mx-auto max-w-6xl px-6 en todas las secciones.
+
+***************************************************************************************
+
+MINIRETO 6 - LA NOCHE CABE EN TU CELULAR: RESPONSIVE
+
+1. Qué se rompía a 360 px (versión del reto 5)
+- Rutas en 3 columnas: tarjetas muy angostas, texto cortado.
+- Pasos en 4 columnas: columnas ilegibles.
+- Encabezado en una fila: logo, enlaces y botón no cabían.
+- Título text-7xl: causaba scroll horizontal.
+- Franja y pie en fila: bloques comprimidos.
+
+2. Cambios (mobile-first)
+- Rutas: grid-cols-1 sm:grid-cols-2 lg:grid-cols-3
+- Pasos: grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+- Encabezado: flex-col md:flex-row
+- Enlaces del encabezado: hidden md:block (en celular solo "Inscríbete")
+- Título: text-3xl md:text-5xl lg:text-7xl
+- Espaciado de secciones: py-10 lg:py-16 / px-4 sm:px-6
+
+3. Tabla de pruebas
+
+Ancho   | Encabezado             | Rutas       | Pasos       | Scroll horizontal
+360 px  | Apilado, solo botón    | 1 columna   | 1 columna   | No
+768 px  | En fila, con enlaces   | 2 columnas  | 2 columnas  | No
+1024 px | En fila, con enlaces   | 3 columnas  | 4 columnas  | No
+1280 px | En fila, con enlaces   | 3 columnas  | 4 columnas  | No
+
+
+***************************************************
