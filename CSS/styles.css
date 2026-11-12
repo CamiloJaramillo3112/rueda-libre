@@ -4,7 +4,6 @@
 
 :root {
 
-
     /* Colores */
 
     --verde-ruta: #1E7A4F;
@@ -59,7 +58,7 @@ main {
     align-items: center;
 }
 
-img{
+img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -80,7 +79,7 @@ TARGETAS
     margin-bottom: var(--espacio-medio);
     border: 1px solid var(--gris-asfalto);
     border-radius: 1rem;
-    blackground-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
 
 .tarjeta img {
@@ -93,13 +92,15 @@ TARGETAS
     position: relative;
 }
 
+/* Accesibilidad: Azul Noche sobre Naranja Pedal = 7.20:1 (blanco daba 2.22:1) */
 .etiqueta-nuevo {
     position: absolute;
     top: 1rem;
     right: 1rem;
     background-color: var(--naranja-pedal);
-    color: white;
-    padding: v0.5rem 1rem;
+    color: var(--azul-noche);
+    font-weight: 600;
+    padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
@@ -107,7 +108,6 @@ TARGETAS
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-
 }
 
 .tarjeta-flota {
@@ -131,17 +131,17 @@ TARGETAS
     gap: 1rem;
 }
 
-.ruta{
+.ruta {
     border: 1px solid var(--gris-asfalto);
     border-radius: 1rem;
     padding: 1rem;
-    blackground-color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
 }
+
 .galeria-rutas {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    
 }
 
 .ruta img {
@@ -162,7 +162,6 @@ FORMULARIOS
 label {
     display: block;
     margin-bottom: 0.5rem;
-
 }
 
 input,
@@ -170,26 +169,23 @@ select,
 textarea {
     width: 100%;
     padding: var(--espacio-pequeno);
-
 }
 
 form {
     padding: var(--espacio-medio);
-
 }
 
 form section {
     margin-bottom: var(--espacio-medio);
 }
 
-.Formulario,
-.Formulario input:focus,
-.Formulario select:focus {
-
-
-    outline: 2px solid var(--naranja-pedal);
+/* Accesibilidad: foco visible con teclado */
+form input:focus,
+form select:focus,
+form textarea:focus,
+form button:focus {
+    outline: 3px solid var(--azul-noche);
     outline-offset: 2px;
-
 }
 
 .datos-personales {
@@ -197,36 +193,41 @@ form section {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-.reservas-layout {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 2rem;
-}
 
 /*==================================================
 BOTONES
 ====================================================*/
+
+/* Accesibilidad: blanco sobre Verde Ruta = 5.31:1 */
 .boton {
-    blackground-color: var(--azul-noche)--verde-ruta;
+    display: inline-block;
+    background-color: var(--verde-ruta);
     color: white;
     padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
     text-decoration: none;
 }
 
 .boton:focus {
-    outline: 3 px solid var(--naranja-pedal);
+    outline: 3px solid var(--azul-noche);
     outline-offset: 3px;
+}
+
+a:focus-visible {
+    outline: 3px solid var(--naranja-pedal);
+    outline-offset: 2px;
 }
 
 
 /*==================================================
 WHATSSAPP BUTTON
 ====================================================*/
+/* Accesibilidad: blanco sobre #128c7e = 4.14:1 (con #25d366 daba 1.98:1) */
 .whatsapp-btn-flotante {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #25d366;
+    background-color: #128c7e;
     color: white;
     width: 60px;
     height: 60px;
@@ -240,37 +241,24 @@ WHATSSAPP BUTTON
 }
 
 .whatsapp-btn-flotante:hover {
-    background-color: #128c7e;
+    background-color: #075e54;
     transform: scale(1.1);
     /* Efecto de crecimiento sutil al pasar el mouse */
 }
-
 
 
 .portada {
     min-height: 50vh;
 }
 
-.portada-imagen{
-
-}
-
-
-
-
-
-
-
 button {
-    padding: 1rem 2 rem;
+    padding: 1rem 2rem;
 }
-
-
 
 
 .activo {
     color: var(--verde-ruta);
-    font-weigth: 600;
+    font-weight: 600;
 }
 
 h1,
@@ -281,9 +269,6 @@ h5,
 h6 {
     font-family: var(--fuente-titulos);
 }
-
-
-
 
 
 footer {
@@ -300,58 +285,58 @@ footer {
     gap: 1rem;
 }
 
-@media (min-width:768px){
+@media (min-width:768px) {
 
-    .portada{
-        grid-template-colums: 1fr 1fr;
-    }
-
-    .galeria-rutas{
+    .portada {
         grid-template-columns: 1fr 1fr;
     }
 
-    .grid-flota{
-        grid-template-columns: repeat(2,1fr);
+    .galeria-rutas {
+        grid-template-columns: 1fr 1fr;
     }
 
-    .reservas-layout{
+    .grid-flota {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .reservas-layout {
         grid-template-columns: 2fr 1fr;
+        gap: 2rem;
     }
 
-    .datos-personales{
+    .datos-personales {
         grid-template-columns: 1fr 1fr;
     }
 
-    header{
+    header {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    #menu{
+    #menu {
         flex-direction: row;
     }
 
-    footer{
+    footer {
         flex-direction: row;
     }
 
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
 
-    .grid-flota{
-        grid-template-columns: repeat(4,1fr);
+    .grid-flota {
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .galeria-rutas{
+    .galeria-rutas {
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-
 }
 
-@media (min-width:768px){
-    table{
+@media (min-width:768px) {
+    table {
         font-size: 1rem;
     }
 }
